@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aptitude Shortcut Master</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Aptitude Shortcut Master</h1>
+    <p>Search questions and shortcut rules with answers and explanations</p>
+  </header>
+
+  <main>
+    <!-- Search Section -->
+    <section class="controls">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search: e.g. '25% of 200', 'profit 400 500', 'time and work 10 15', 'speed', 'average'"
+      >
+
+      <select id="categoryFilter">
+        <option value="All">All Topics</option>
+        <option value="Percentage">Percentage</option>
+        <option value="Profit and Loss">Profit and Loss</option>
+        <option value="Time and Work">Time and Work</option>
+        <option value="Speed and Distance">Speed and Distance</option>
+        <option value="Average">Average</option>
+        <option value="Number System">Number System</option>
+        <option value="Simple Interest">Simple Interest</option>
+        <option value="Ratio and Proportion">Ratio and Proportion</option>
+        <option value="Permutation and Combination">Permutation and Combination</option>
+        <option value="Probability">Probability</option>
+      </select>
+
+      <button id="clearBtn">Clear</button>
+    </section>
+
+    <!-- Results Section (Question-based search) -->
+    <section>
+      <h2>Search Results</h2>
+      <div id="resultContainer"></div>
+    </section>
+
+    <!-- Shortcuts Section (All shortcut rules) -->
+    <section>
+      <h2>All Shortcut Rules</h2>
+      <div id="shortcutsContainer"></div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section">
+      <h2>Quick Quiz</h2>
+
+      <div id="quizBox">
+        <p id="question"></p>
+        <div id="options"></div>
+        <button id="nextBtn">Next Question</button>
+        <p id="score"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Aptitude Shortcut Master</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

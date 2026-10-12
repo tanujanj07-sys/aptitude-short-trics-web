@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 35px 15px;
+  color: white;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+main {
+  width: 90%;
+  max-width: 1150px;
+  margin: 30px auto;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.controls input,
+.controls select {
+  flex: 1;
+  min-width: 220px;
+  padding: 13px;
+  border: 1px solid #ccd3df;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  color: white;
+  background: #7596e2;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+button:hover {
+  background: #4fee84;
+}
+
+h2 {
+  margin-bottom: 18px;
+  color: #1e3a8a;
+}
+
+#resultContainer,
+#shortcutsContainer {
+  display: grid;
+  gap: 20px;
+}
+
+.result-card,
+.shortcut-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #2563eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.result-card h3,
+.shortcut-card h3 {
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+.category {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 4px 8px;
+  border-radius: 15px;
+  color: #1e3a8a;
+  background: #dbeafe;
+  font-size: 0.8rem;
+}
+
+.question {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.answer {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  color: #166534;
+  background: #dcfce7;
+  font-weight: bold;
+}
+
+.shortcut {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  color: #1e3a8a;
+  background: #e0e7ff;
+}
+
+.explanation {
+  margin-top: 10px;
+}
+
+.explanation ol {
+  margin-left: 20px;
+}
+
+.example {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #f1f5f9;
+}
+
+.quiz-section {
+  margin-top: 45px;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#question {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.option {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  text-align: left;
+  color: #222;
+  background: #eef2ff;
+}
+
+.option:hover {
+  background: #7bdf7d;
+}
+
+#score {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background: #d146bc;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  main {
+    width: 94%;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .controls input,
+  .controls select,
+  .controls button {
+    width: 100%;
+  }
+}
